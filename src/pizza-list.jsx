@@ -52,7 +52,15 @@ export default function PizzaListPage() {
                   >
                     Glutenmentes-e: {pizza.isGlutenFree ? "Igen" : "Nem"}
                   </p>
-                  <img src={pizza.kepURL} alt={pizza.name} height={200} />
+                  <img
+                    src={pizza.kepURL}
+                    alt={pizza.name}
+                    height={200}
+                    style={{
+                      objectFit: "contain",
+                      maxWidth: "100%",
+                    }}
+                  />
                 </div>
               </NavLink>
             ))}
